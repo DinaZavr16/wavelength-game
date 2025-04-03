@@ -9,12 +9,11 @@
 .board {
   width: 800px;
   height: 400px;
-  background: linear-gradient(90deg, #ff6b6b 0%, #4ecdc4 100%);
-  border-radius: 400px;
+  background-color: #e0e0e0;
+  border-radius: 400px 400px 0 0;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
 
@@ -106,62 +105,23 @@
   background-color: #26d67b;
 }
 
-/* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .board {
-    width: 600px;
-    height: 300px;
-    border-radius: 300px;
+    width: 300px;
+    height: 150px;
   }
 
   .target-area {
-    width: 600px;
-    height: 300px;
-    border-radius: 300px;
-  }
-
-  .needle-container {
-    height: 280px;
+    width: 300px;
+    height: 150px;
   }
 
   .needle {
-    height: 300px;
-  }
-
-  .target {
-    width: 100px;
-    height: 100px;
+    height: 130px;
   }
 
   .game-button {
     padding: 10px 20px;
     font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .board {
-    width: 400px;
-    height: 200px;
-    border-radius: 200px;
-  }
-
-  .target-area {
-    width: 400px;
-    height: 200px;
-    border-radius: 200px;
-  }
-
-  .needle-container {
-    height: 180px;
-  }
-
-  .needle {
-    height: 200px;
-  }
-
-  .target {
-    width: 80px;
-    height: 80px;
   }
 }
