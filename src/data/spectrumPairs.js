@@ -39,4 +39,12 @@ export const spectrumPairs = [
     left: "Small",
     right: "Big",
   },
+  {
+    left: "Cheap",
+    right: "Expensive",
+  },
+  {
+    left: "Easy",
+    right: "Hard",
+  },
 ];
