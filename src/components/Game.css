@@ -1,17 +1,21 @@
 .game-container {
-  text-align: center;
-  background-color: white;
-  width: 95%;
-  max-width: 1400px;
-  padding: 1.5rem;
-  border-radius: 32px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.5rem;
   gap: 1rem;
+  min-height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: white;
+  border-radius: 32px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
 }
 
 .game-container::before {
@@ -206,65 +210,91 @@ body {
   box-shadow: 0 6px 8px rgba(254, 202, 87, 0.3);
 }
 
+/* Mobile Responsive Styles */
 @media (max-width: 768px) {
   .game-container {
-    width: 95%;
-    padding: 1.5rem;
-    margin: 1rem auto;
-    border-radius: 16px;
+    width: 100%;
+    padding: 1rem;
+    gap: 0.75rem;
   }
 
   .title {
-    font-size: 36px;
+    font-size: 32px;
+    margin-bottom: 0.5rem;
   }
 
   .player-info {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
-  .players-container {
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
+    padding: 0.75rem;
+    gap: 0.5rem;
   }
 
   .current-player,
   .other-player {
-    justify-content: center;
-    width: 100%;
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+
+  .game-board-container {
+    max-width: 100%;
+    padding: 0.75rem;
+    gap: 0.75rem;
   }
 
   .round {
-    justify-self: center;
+    font-size: 18px;
+    padding: 0.5rem 1rem;
   }
 
-  .player-scores {
-    flex-direction: column;
-    gap: 1rem;
+  .clues-container {
+    max-width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+  }
+
+  .clue {
+    font-size: 16px;
+    padding: 0.75rem;
+  }
+
+  .score-display {
+    padding: 0.75rem;
+    gap: 0.5rem;
   }
 
   .player-score {
-    min-width: unset;
-    width: 100%;
-    padding: 1rem;
-  }
-
-  .round-score {
-    font-size: 24px;
-  }
-
-  .game-controls {
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
+    min-width: 200px;
+    padding: 0.75rem 1.5rem;
+    font-size: 16px;
   }
 
   .game-button {
-    width: 100%;
-    font-size: 20px;
-    padding: 12px 24px;
-    min-width: unset;
+    font-size: 16px;
+    padding: 8px 24px;
+  }
+
+  .round-score {
+    font-size: 16px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .current-player,
+  .other-player {
+    font-size: 14px;
+  }
+
+  .player-score {
+    min-width: 160px;
+    padding: 0.5rem 1rem;
+  }
+
+  .game-button {
+    font-size: 14px;
+    padding: 6px 20px;
   }
 }
