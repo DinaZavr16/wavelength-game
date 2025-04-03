@@ -1,0 +1,97 @@
+.clues-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.clue {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  padding: 1.5rem 3rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  min-width: 300px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.clue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+.bidirectional-arrow {
+  position: relative;
+  width: 150px;
+  height: 3px;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+}
+
+.bidirectional-arrow::before,
+.bidirectional-arrow::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-style: solid;
+  border-color: var(--primary-color);
+  border-width: 0 3px 3px 0;
+  opacity: 0.8;
+}
+
+.bidirectional-arrow::before {
+  left: -2px;
+  transform: rotate(135deg);
+  top: -6px;
+}
+
+.bidirectional-arrow::after {
+  right: -2px;
+  transform: rotate(-45deg);
+  top: -6px;
+}
+
+@media (max-width: 768px) {
+  .clues-display {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .clue {
+    font-size: 1.4rem;
+    padding: 1.2rem 2rem;
+    min-width: 250px;
+  }
+
+  .bidirectional-arrow {
+    width: 3px;
+    height: 80px;
+  }
+
+  .bidirectional-arrow::before,
+  .bidirectional-arrow::after {
+    left: -6px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .bidirectional-arrow::before {
+    top: -2px;
+    transform: rotate(-135deg);
+  }
+
+  .bidirectional-arrow::after {
+    top: auto;
+    bottom: -2px;
+    transform: rotate(45deg);
+  }
+}
