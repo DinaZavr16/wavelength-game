@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/wavelength-game/static/css/main.38e660e6.css",
+    "main.css": "/wavelength-game/static/css/main.5e8d9dc2.css",
     "main.js": "/wavelength-game/static/js/main.9cacb247.js",
     "index.html": "/wavelength-game/index.html",
-    "main.38e660e6.css.map": "/wavelength-game/static/css/main.38e660e6.css.map",
+    "main.5e8d9dc2.css.map": "/wavelength-game/static/css/main.5e8d9dc2.css.map",
     "main.9cacb247.js.map": "/wavelength-game/static/js/main.9cacb247.js.map"
   },
   "entrypoints": [
-    "static/css/main.38e660e6.css",
+    "static/css/main.5e8d9dc2.css",
     "static/js/main.9cacb247.js"
   ]
 }
